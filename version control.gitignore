@@ -1,0 +1,21 @@
+What is version control and why is it important?
+
+Also called VCS, which helps individuals or teams to be able to collaborate together on various projects.
+
+Also used by developers to be able to use and collect their information from various projects
+
+Also generating copies of their codes that work as teams in which they can see the changes, contributions 
+or alignments made in joint projects.
+
+One of the most booming benefits could be that in various time zones developers can propose changes to the 
+code while maintaining its integrity and production security.
+
+One of the most popular ways to use version control is through a repository. where you can find 
+the copies of the codes and access them from anywhere to generate 
+a better code or final product after the collaboration of several developers
+
+A command used in Version Control for example a Git command we could think of git add which helps us to
+start the changes in the data bases of the codes, which has two steps in the commands. the first as
+a change from the beginning of the project and the other as the history of the project
+
+
