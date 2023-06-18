@@ -11,7 +11,7 @@ public class Entry
 
     // So we need the current date, so we call datetime.now
     // so we parse it into a string and figure out what format we want the date in.
-    public string_date = DateTime.Now.ToString("M/d/yyyy");
+    public string _date = DateTime.Now.ToString("M/d/yyyy");
 
     // This variable _entry will hold the user entry
     public string _entry;
