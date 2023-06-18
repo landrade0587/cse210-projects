@@ -1,7 +1,7 @@
 using System;
 
 // In this part entry the class, which is responsible for each of the inputs that the user enters.
-public class entry
+public class Entry
 {    // We declare variables that will be used in my class
     // We will variable _prompt for to catch the ramdom prompt generated for ours promp generator
     public string _prompt;
@@ -18,7 +18,7 @@ public class entry
 
     // We need to connect with prompgenerator class  with entry class, bacause we need the prompt
     // for two methods (Store/EntryDisp) the to be able to do it. We create PrompGenerator object
-    public PrompGenerator _randomPromp = new PrompGenerator();
+    public PrompGenerator _randomPrompt = new PrompGenerator();  
 
     // We use this variable for store user entry with date and prompt together with a special
     // format in order to recover them later when user uses load method

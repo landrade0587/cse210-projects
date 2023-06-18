@@ -1,9 +1,10 @@
 using System;
 
-class program
+class Program 
 {
     static void Main(string[] args)
-    {  // Mostly we declare the variables. We will use in ours main class. Second We will create too
+    {  
+      // Mostly we declare the variables. We will use in ours main class. Second We will create too
        // one object of class journal this object which one we will use and it is for connected whit other class. 
        int userOption = 0;
        string input; 
@@ -32,11 +33,11 @@ class program
 
           // Now  if the conditionals to do the different thing that the menu
           // we offers to the user the next:
-          if (userOption ==1){
+          if (userOption == 1){
               journal.AddEntries();
           }
 
-          else if (userOption ==2){
+          else if (userOption == 2){
                journal.EntriesDisp();
           }
 

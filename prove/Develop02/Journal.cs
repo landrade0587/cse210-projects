@@ -1,4 +1,4 @@
-using System
+using System;
 
 public class Journal{
 
@@ -14,7 +14,7 @@ public class Journal{
     public void AddEntries(){
         _entries.Add(new Entry());
         _listLenght = _entries.Count;
-        _entries[_listLenght - 1]._prompt =_entries[_listLenght - 1]._ramdomPrompt.PromptDis();
+        _entries[_listLenght - 1]._prompt =_entries[_listLenght - 1]._randomPrompt.PromptDis();
         _entries[_listLenght - 1]._entry = Console.ReadLine();
         Console.WriteLine();
         _entries[_listLenght - 1].Store();
@@ -46,17 +46,17 @@ public class Journal{
             _entries[_listLenght - 1]._entry = parts[2].Replace("~" , ",");
             _entries[_listLenght - 1].Store();
         }
+    }
 
-        //The save method will store the entries in the file, so we will have the user's file name.
-        // Where the method will use it as a parameter we will save it as a special string that will
-        // be in _storeEntry for which the previous entry gave rise to the value of said variable
+    //The save method will store the entries in the file, so we will have the user's file name.
+    // Where the method will use it as a parameter we will save it as a special string that will
+    // be in _storeEntry for which the previous entry gave rise to the value of said variable
 
-        public void Save(string fileName){
+    public void Save(string fileName){
             using (StreamWriter  outputFile = new StreamWriter(fileName)){
                 foreach(Entry _entry in _entries){
                     outputFile.WriteLine($"{_entry._storeEntry}");    
                 }
             }      
          }
-    }
 }
