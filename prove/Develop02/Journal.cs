@@ -1,5 +1,7 @@
 using System
+
 public class Journal{
+
     // We create to list of entry for teh save each in the ours entries and entry object
     // by doing this we will be able to access any feature in the entry class
     public List<Entry> _entries = new List<Entry>();
@@ -12,11 +14,12 @@ public class Journal{
     public void AddEntries(){
         _entries.Add(new Entry());
         _listLenght = _entries.Count;
-        _entries[_listLenght - 1]._prompt = _entries[_listLenght - 1]._ramdomPrompt.PromptDis();
+        _entries[_listLenght - 1]._prompt =_entries[_listLenght - 1]._ramdomPrompt.PromptDis();
         _entries[_listLenght - 1]._entry = Console.ReadLine();
         Console.WriteLine();
         _entries[_listLenght - 1].Store();
     }
+
     // In this part we added EntriesDisp methods will display all the entries making use of
     // the EntryDisp method in the entry class, each entry will have its own EntryDisp methods
     public void EntriesDisp(){
@@ -25,6 +28,7 @@ public class Journal{
             _entries[i].EntryDisp();
         }
     }
+
     // We load a file, a file that has already been saved; from that file we will get a string that
     // we will manipulate to store the old entries in the list of entries with their different behaviors
     // and attributes, therefore even when a new file is uploaded a new journal object will be created
@@ -35,7 +39,7 @@ public class Journal{
         _entries.Clear();
         foreach (string line in lines){
             _entries.Add(new Entry());
-            string[] parts = lines.Split(",");
+            string[] parts = line.Split(",");
             _listLenght = _entries.Count;
             _entries[_listLenght - 1]._date = parts[0];
             _entries[_listLenght - 1]._prompt = parts[1];
@@ -47,12 +51,12 @@ public class Journal{
         // Where the method will use it as a parameter we will save it as a special string that will
         // be in _storeEntry for which the previous entry gave rise to the value of said variable
 
-        public voiod Save(string fileName){
+        public void Save(string fileName){
             using (StreamWriter  outputFile = new StreamWriter(fileName)){
-                foreach(EntryPointNotFoundException _entry in _entries){
+                foreach(Entry _entry in _entries){
                     outputFile.WriteLine($"{_entry._storeEntry}");    
                 }
-            }
-        }      
-     }
+            }      
+         }
+    }
 }
