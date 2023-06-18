@@ -1,7 +1,7 @@
 using System;
 
 // In this part entry the class, which is responsible for each of the inputs that the user enters.
-Public class entry
+public class entry
 {    // We declare variables that will be used in my class
     // We will variable _prompt for to catch the ramdom prompt generated for ours promp generator
     public string _prompt;

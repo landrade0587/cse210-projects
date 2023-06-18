@@ -1,6 +1,6 @@
 using System;
 
-class Program
+class program
 {
     static void Main(string[] args)
     {  // Mostly we declare the variables. We will use in ours main class. Second We will create too
