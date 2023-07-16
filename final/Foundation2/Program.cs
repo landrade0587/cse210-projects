@@ -6,16 +6,16 @@ class Program
     {                
         List<Product> products1 = new List<Product>
         {
-            new Product("Hydro-Force, Viper Stone Perfect,","00001",3.50,3),
-            new Product("Carpet Cleaning Prespray, Zone Perfect","00002",30.00,2),
-            new Product("Carpet Cleaning Prespray, Bio Break W/Citrus Solv","00003",63.00,1)
+            new Product("Hydro-Force, Viper Stone Perfect,","00001",36.27,4),
+            new Product("Carpet Cleaning Prespray, Zone Perfect","00002",51.24,12),
+            new Product("Carpet Cleaning Prespray, Bio Break W/Citrus Solv","00003",50.81,6)
         };
 
         List<Product> products2 = new List<Product>
         {
-            new Product("Extraction Rinse, Fab-Set","00004",9.25,2),
-            new Product("Extraction Rinse, End Zone","00005",3.05,3),
-            new Product("Carpet Protector, Maxim Advanced","00006",7.60,2)
+            new Product("Extraction Rinse, Fab-Set","00004",27.32,8),
+            new Product("Extraction Rinse, End Zone","00005",40.23,24),
+            new Product("Carpet Protector, Maxim Advanced","00006",309.38,5)
         };
 
         Address address1 = new Address("Street 130 #9-87 tower 37 apartment 201", "Barranquilla", "Atlantico", "Colombia");
