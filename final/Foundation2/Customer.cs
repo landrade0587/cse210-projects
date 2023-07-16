@@ -22,7 +22,7 @@ public class Customer
     public string GetName()
     {
         return _name;
-    }
+    } 
     public Address GetAddress()
     {
         return _address;

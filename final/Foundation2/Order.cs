@@ -24,22 +24,22 @@ public class Order
         Console.WriteLine("     Products:");
         foreach (var product in _products)
         {
-            Console.WriteLine("     ================================");
+            Console.WriteLine("     =======================================");
             Console.WriteLine($"     Name:{product.GetName()}");
             Console.WriteLine($"     Id:{product.GetId()}");
             Console.WriteLine($"     Unit Price:{product.GetUnitPrice()}");
             Console.WriteLine($"     Quantity:{product.GetQuantity()}");
-            Console.WriteLine("     ================================\n");
+            Console.WriteLine("     ========================================\n");
         }
     }
     public void DisplayShippingLabel()
     {
         Console.WriteLine("\nShipping Label:");
         Console.WriteLine("     Customer:");        
-        Console.WriteLine("     ================================");
+        Console.WriteLine("     *******************************************************************************");
         Console.WriteLine($"     Name:{_customer.GetName()}");
         Console.WriteLine($"     Adress:{_customer.GetAddress().GetFullAddress()}");
-        Console.WriteLine("     ================================\n");        
+        Console.WriteLine("     *******************************************************************************\n");        
     }
     public double GetShippingCost()
     {
