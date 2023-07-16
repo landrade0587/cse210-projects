@@ -6,20 +6,20 @@ class Program
     {                
         List<Product> products1 = new List<Product>
         {
-            new Product("The Book of Mormon Hardcover","00001",3.50,3),
-            new Product("Simulated Leather Bible","00002",30.00,2),
-            new Product("Thumb-indexed Genuine Leather Quad Combination","00003",63.00,1)
+            new Product("Hydro-Force, Viper Stone Perfect,","00001",3.50,3),
+            new Product("Carpet Cleaning Prespray, Zone Perfect","00002",30.00,2),
+            new Product("Carpet Cleaning Prespray, Bio Break W/Citrus Solv","00003",63.00,1)
         };
 
         List<Product> products2 = new List<Product>
         {
-            new Product("Preach My Gospel","00004",9.25,2),
-            new Product("Oil Vial Keychain","00005",3.05,3),
-            new Product("Plastic Oil Vial","00006",7.60,2)
+            new Product("Extraction Rinse, Fab-Set","00004",9.25,2),
+            new Product("Extraction Rinse, End Zone","00005",3.05,3),
+            new Product("Carpet Protector, Maxim Advanced","00006",7.60,2)
         };
 
         Address address1 = new Address("Street 130 #9-87 tower 37 apartment 201", "Barranquilla", "Atlantico", "Colombia");
-        Address address2 = new Address("Washington Av #713", "Salt Lake", "Utah", "USA");
+        Address address2 = new Address("Aramsco 7074 Convoy Ct San Diego, CA 92111-1017", "San Diego", "California", "USA");
 
         Customer customer1 = new Customer("Luis Andrade", address1);
         Customer customer2 = new Customer("Jesse Crockett", address2);
